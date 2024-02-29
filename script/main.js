@@ -6,13 +6,13 @@ const fetchData = () => {
       dataArr = Object.keys(data);
       dataArr.map(customData => {
         if (data[customData] !== "") {
-          // if (customData === "imagePath") {
-          //   document
-          //     .querySelector(`[data-node-name*="${customData}"]`)
-          //     .setAttribute("src", data[customData]);
-          // } else {
+          if (customData === "imagePath") {
+            document
+              .querySelector(`[data-node-name*="${customData}"]`)
+              .setAttribute("src", data[customData]);
+          } else {
             document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
-          // }
+          }
         }
 
         // Check if the iteration is over
