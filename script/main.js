@@ -10,9 +10,9 @@ const fetchData = () => {
           //   document
           //     .querySelector(`[data-node-name*="${customData}"]`)
           //     .setAttribute("src", data[customData]);
-          } else {
+          // } else {
             document.querySelector(`[data-node-name*="${customData}"]`).innerText = data[customData];
-          }
+          // }
         }
 
         // Check if the iteration is over
