@@ -298,7 +298,7 @@ const animationTimeline = () => {
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
-    window.open("https://google.com");
+    window.open("text.html");
   });
 };
 
